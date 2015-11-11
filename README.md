@@ -7,3 +7,5 @@ WordPress个人云存储插件
 
 使用
 将插件放置在wp-content/plugins目录下，激活后对bucket、ak、sk和host进行设置。在媒体库中上传图片，在bucket中可以看到生成的文件。
+<img src="screenshot1.png"/>
+<img src="screenshot2.png"/>
