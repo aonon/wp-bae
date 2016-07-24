@@ -313,6 +313,18 @@ function bae_setting_page()
 <?php }
 
 
+//Support image attribude srcset
+function bos_custom_image_srcset( $sources, $size_array, $image_src, $image_meta, $attachment_id ){
+        $result = array();
+
+        foreach ( $sources as $source ) {
+            $source['url'] = bae_format_url($source['url']);
+            $result[] = $source;
+        }
+
+       return $result;
+ }
+
 //生成缩略图后立即上传
 add_filter('wp_generate_attachment_metadata', 'bae_upload_attachment', 999);
 //add_filter("wp_image_editors", "bae_image_editor_choose");
